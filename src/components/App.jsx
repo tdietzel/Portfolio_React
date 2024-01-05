@@ -9,18 +9,22 @@ function App() {
           <div className="profile-pic">
             <Card.Img src={image} alt="A picture of me fishing." />
           </div>
-          <h1>Trent Dietzel's
+          <h1 className='title-font'>Hey, I'm Trent
           <br />
           <span id="title">
-          <span style={{ "--index": 1, paddingLeft: "62px" }}>P</span>
-          <span style={{ "--index": 2 }}>o</span>
-          <span style={{ "--index": 3 }}>r</span>
-          <span style={{ "--index": 4 }}>t</span>
-          <span style={{ "--index": 5 }}>f</span>
-          <span style={{ "--index": 6 }}>o</span>
-          <span style={{ "--index": 7 }}>l</span>
-          <span style={{ "--index": 8 }}>i</span>
-          <span style={{ "--index": 9 }}>o</span>
+            <span style={{ "--index": 1, paddingLeft: "62px" }}>W</span>
+            <span style={{ "--index": 2 }}>e</span>
+            <span style={{ "--index": 3 }}>b</span>
+            <span style={{ "--index": 4, paddingRight: '30px' }}></span>
+            <span style={{ "--index": 5 }}>D</span>
+            <span style={{ "--index": 6 }}>e</span>
+            <span style={{ "--index": 7 }}>v</span>
+            <span style={{ "--index": 8 }}>e</span>
+            <span style={{ "--index": 9 }}>l</span>
+            <span style={{ "--index": 10 }}>o</span>
+            <span style={{ "--index": 11 }}>p</span>
+            <span style={{ "--index": 12 }}>e</span>
+            <span style={{ "--index": 12 }}>r</span>
           </span>
         </h1>
         </Card>
