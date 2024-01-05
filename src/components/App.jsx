@@ -8,13 +8,13 @@ function App() {
         <h1>Trent Dietzel's <span id="title">Portfolio</span></h1>
       </div>
       <Container className="body">
-        <Card>
-          <Card.Img src={image} alt="A picture of me fishing."/>
+        <Card className="profile-pic">
+          <Card.Img src={image} alt="A picture of me fishing." />
         </Card>
       </Container>
       <Container className="current-projects">
         <Card>
-          <Card.Title className="yellow"><em>Current Projects!</em></Card.Title>
+          <Card.Title className="white"><em>Current Projects!</em></Card.Title>
           <ListGroup>
             <ListGroupItem><Card.Link><a href="https://github.com/tdietzel22/resort-website">Resort Website</a></Card.Link></ListGroupItem>
             <CardText className="cp-describe">This repository practices creating a resort website called Shady Pines with HTML and CSS.</CardText>

@@ -1,112 +1,63 @@
-#easa {
-  margin-top: 0;
+.header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
 }
 #title {
   font-family: Verdana;
-  color:rgb(0, 153, 254)
+  color:black;
+  font-weight: bold;
 }
 body {
-  background: radial-gradient(red,white)
-}
-.header {
-  width: 30vw;
   text-align: center;
-  margin: auto;
-  background-color:black;
-  display: block;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding: 0px;
 }
-.header h1 {
-  margin: 0px;
-  color:red;
-  border-style: groove;
-  border-color:silver;
-  border-width: 7px;
-}
+/* .profile-pic {} */
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
   width: 300px;
   height: 400px;
   border-style: groove;
   border-color: red;
   border-width: 10px;
 }
+img:hover {
+  transform: scale(1.10);
+  cursor: pointer;
+}
 .current-projects {
-  background: linear-gradient(blue,white);
-  color: black;
-  border-style: inset;
-  text-align: center;
-  font-family: 'Courier New';
-  font-weight: 900;
-  width: 30vw;
-  margin: auto;
-  margin-bottom: 10px;;
-  padding-bottom: 15px;
+  background-color: #ffc107;
+  padding: 20px;
 }
-.about-me {
-  background-color:black;
-  color:white;
-  width: 48vw;
-  float: left;
-  text-align: center;
-  border-style: double;
-  border-width: 10px;
-}
-.my-background {
-  background-color:black;
-  color:white;
-  width: 48vw;
-  float: right;
-  text-align: center;
-  border-style: double;
-  border-width: 10px;
-  padding-bottom: 45px;
-}
-.blue{
-  color:blue;
-  width: 15vw;
-  margin: auto;
-  margin-top: 10px;
-}
-.red {
-  color:red;
-  padding-left: 20px;
-}
-.yellow {
-  color:#D4AF37;
-}
-.sub-text {
-  font-size: x-small;
-  margin-top: 0px;
-  color:grey;
-}
-.my-background ul {
-  margin-bottom: 0px;
-}
-#enroll-pg {
-  font-family: monospace;
-}
-.about-me li {
-  font-family: fantasy;
-}
-.about-me ul {
-  font-family: sans-serif;
+.white {
+  color: white;
 }
 .cp-describe {
-  font-size: x-small;
-  color:black;
-  font-family: cursive;
+  margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
-  .about-me {
-      width: 100vw;
-      float: right;
-  }
-  .my-background {
-      width: 100vw;
-      float: right;
-  }
+.about-me {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+}
+.blue {
+  color: #007bff;
+}
+.red {
+  color: #dc3545;
+}
+.sub-text {
+  margin-top: 5px;
+}
+.my-background {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+}
+/* #enroll-pg{} */
+.container {
+  margin-top: 20px;
 }
