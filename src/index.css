@@ -15,10 +15,10 @@ html {
 }
 @keyframes waveAnimation {
   0%, 100% {
-    transform: translateY(-50px);
+    transform: translateY(-40px);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(40px);
   }
 }
 h1 span {
@@ -61,7 +61,7 @@ body {
   margin-right: 20px;
   margin-top: 20px;
 }
-img {
+.profile-picture {
   border-radius: 360px;
   width: 300px;
   height: 400px;
@@ -70,8 +70,8 @@ img {
   border-width: 5px;
   transition: transform 0.3s ease;
 }
-img:hover {
-  transform: scale(2.10) translate(0px, 150px);
+.profile-picture:hover {
+  transform: scale(2.10) translate(-20px, 150px);
   cursor: pointer;
   border-color: black;
   box-shadow: 0 0 40px white;

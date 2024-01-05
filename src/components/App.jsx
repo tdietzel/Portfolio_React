@@ -1,12 +1,16 @@
-import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle, Button, ButtonGroup } from 'react-bootstrap'
+import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle, Button, ButtonGroup, Col } from 'react-bootstrap'
 import image from "../assets/myPicture.png"
+import discord from "../assets/discord.png"
+import linkedin from "../assets/linkedin.png"
+import twitter from "../assets/twitter.png"
+
 function App() {
   return (
     <>
       <Container className="body">
         <Card className="profile-pic-container">
           <div className="profile-pic">
-            <Card.Img src={image} alt="A picture of me fishing." />
+            <Card.Img src={image} alt="A picture of me fishing." className="profile-picture"/>
           </div>
           <h1 className='title-font'>Hey, I'm Trent
           <br />
@@ -28,13 +32,20 @@ function App() {
         </h1>
         </Card>
       </Container>
-      <ButtonGroup className="button-group">
+      <Col md={6}>
+      <ButtonGroup style={{marginLeft: '440px'}} className="button-group">
         <div className="button-style">
             <Button variant="outline-light">Projects</Button>{' '}
             <Button variant="outline-light">Interests</Button>{' '}
             <Button variant="outline-light">Resume</Button>{' '}
         </div>
+        <Card style={{marginLeft: '100px'}}>
+          <Card.Img src={linkedin} alt="LinkedIn" style={{ height:'100px', width:'100px', paddingRight: '20px' }}/>
+          <Card.Img src={discord} alt="Discord" style={{ height:'100px', width:'100px', paddingRight: '20px' }}/>
+          <Card.Img src={twitter} alt="Twitter" style={{ height:'100px', width:'100px' }}/>
+        </Card>
       </ButtonGroup>
+      </Col>
       <Container className="current-projects">
         <Card>
           <Card.Title className="white"><em>Current Projects!</em></Card.Title>
