@@ -4,12 +4,25 @@ import image from "../assets/myPicture.png"
 function App() {
   return (
     <>
-      <div class="header">
-        <h1>Trent Dietzel's <span id="title">Portfolio</span></h1>
-      </div>
       <Container className="body">
-        <Card className="profile-pic">
-          <Card.Img src={image} alt="A picture of me fishing." />
+        <Card className="profile-pic-container">
+          <div className="profile-pic">
+            <Card.Img src={image} alt="A picture of me fishing." />
+          </div>
+          <h1>Trent Dietzel's
+          <br />
+          <span id="title">
+          <span style={{ "--index": 1, paddingLeft: "62px" }}>P</span>
+          <span style={{ "--index": 2 }}>o</span>
+          <span style={{ "--index": 3 }}>r</span>
+          <span style={{ "--index": 4 }}>t</span>
+          <span style={{ "--index": 5 }}>f</span>
+          <span style={{ "--index": 6 }}>o</span>
+          <span style={{ "--index": 7 }}>l</span>
+          <span style={{ "--index": 8 }}>i</span>
+          <span style={{ "--index": 9 }}>o</span>
+          </span>
+        </h1>
         </Card>
       </Container>
       <Container className="current-projects">
