@@ -62,15 +62,54 @@ body {
   margin-top: 20px;
 }
 img {
+  border-radius: 360px;
   width: 300px;
   height: 400px;
   border-style: groove;
-  border-color: red;
-  border-width: 10px;
+  border-color: rgb(255, 196, 0);
+  border-width: 5px;
+  transition: transform 0.3s ease;
 }
 img:hover {
-  transform: scale(2.10);
+  transform: scale(2.10) translate(0px, 150px);
   cursor: pointer;
+  border-color: black;
+  box-shadow: 0 0 40px white;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.button-style {
+  padding: 20px;
+  background-color: rgb(171, 218, 246, 0.5);
+  border-radius: 20px;
+}
+button {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  border: 2px solid #00f;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+button:hover {
+  background-color: rgba(0, 0, 255, 1);
+  color: #fff;
+  box-shadow: 0 0 15px #00f;
 }
 .current-projects {
   background-color: #ffc107;

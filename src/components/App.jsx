@@ -1,6 +1,5 @@
-import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle } from 'react-bootstrap'
+import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle, Button, ButtonGroup } from 'react-bootstrap'
 import image from "../assets/myPicture.png"
-
 function App() {
   return (
     <>
@@ -29,6 +28,13 @@ function App() {
         </h1>
         </Card>
       </Container>
+      <ButtonGroup className="button-group">
+        <div className="button-style">
+            <Button variant="outline-light">Projects</Button>{' '}
+            <Button variant="outline-light">Interests</Button>{' '}
+            <Button variant="outline-light">Resume</Button>{' '}
+        </div>
+      </ButtonGroup>
       <Container className="current-projects">
         <Card>
           <Card.Title className="white"><em>Current Projects!</em></Card.Title>
