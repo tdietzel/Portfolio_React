@@ -3,6 +3,7 @@ import image from "../assets/myPicture.png"
 import discord from "../assets/discord.png"
 import linkedin from "../assets/linkedin.png"
 import twitter from "../assets/twitter.png"
+import gitHub from "../assets/github.png"
 
 function App() {
   return (
@@ -40,9 +41,10 @@ function App() {
             <Button variant="outline-light">Resume</Button>{' '}
         </div>
         <Card style={{marginLeft: '100px'}}>
-          <Card.Img src={linkedin} alt="LinkedIn" style={{ height:'100px', width:'100px', paddingRight: '20px' }}/>
-          <Card.Img src={discord} alt="Discord" style={{ height:'100px', width:'100px', paddingRight: '20px' }}/>
-          <Card.Img src={twitter} alt="Twitter" style={{ height:'100px', width:'100px' }}/>
+          <Card.Img src={linkedin} alt="LinkedIn" style={{marginRight: '10px'}} className="social-media"/>
+          <Card.Img src={gitHub} alt="GitHub" style={{marginRight: '10px', borderColor: 'white'}} className="social-media"/>
+          <Card.Img src={discord} alt="Discord" style={{marginRight: '10px'}} className="social-media"/>
+          <Card.Img src={twitter} alt="Twitter" style={{borderColor: 'white'}} className="social-media"/>
         </Card>
       </ButtonGroup>
       </Col>

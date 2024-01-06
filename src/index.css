@@ -71,7 +71,7 @@ body {
   transition: transform 0.3s ease;
 }
 .profile-picture:hover {
-  transform: scale(2.10) translate(-20px, 150px);
+  transform: scale(2.10) translate(-40px, 150px);
   cursor: pointer;
   border-color: black;
   box-shadow: 0 0 40px white;
@@ -97,7 +97,7 @@ button {
   overflow: hidden;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
-button::before {
+/* button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -105,11 +105,33 @@ button::before {
   bottom: 0;
   left: 0;
   pointer-events: none;
-}
+} */
 button:hover {
   background-color: rgba(0, 0, 255, 1);
   color: #fff;
   box-shadow: 0 0 15px #00f;
+}
+.social-media {
+  height: 100px;
+  width: 100px;
+}
+@keyframes rotateAndScaleAnimation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.4);
+  }
+}
+
+.your-element {
+  position: relative;
+}
+.social-media:hover {
+  border-radius: 100%;
+  border: 4px solid black;
+  animation: rotateAndScaleAnimation 5s linear infinite;
+  cursor: pointer;
 }
 .current-projects {
   background-color: #ffc107;
