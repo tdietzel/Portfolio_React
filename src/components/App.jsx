@@ -1,9 +1,10 @@
-import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle, Button, ButtonGroup, Col } from 'react-bootstrap'
+import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle, Button, ButtonGroup, Col, CardImg, CardSubtitle } from 'react-bootstrap'
 import image from "../assets/myPicture.png"
 import discord from "../assets/discord.png"
 import linkedin from "../assets/linkedin.png"
 import twitter from "../assets/twitter.png"
 import gitHub from "../assets/github.png"
+import resumeBKG from '../assets/resume.png'
 
 function App() {
   return (
@@ -67,11 +68,17 @@ function App() {
         </Card>
       </Container>
       
-      {/* <Container style={{border:'5px solid black', height:'1000px', width:'auto'}} className="resume-container">
+      <Container >
         <Card>
-          <CardTitle>Resume</CardTitle>
+          <div style={{ position: 'relative' }}>
+          <CardImg src={resumeBKG}/>
+          <div style={{ position: 'absolute', top: '15%', left: '42%', color: 'black', textAlign: 'center' }}>
+            <CardTitle style={{ fontWeight:'bold', fontSize:'4rem', fontFamily:'Courier New' }}>Trent Dietzel</CardTitle>
+            <CardSubtitle style={{ fontWeight:'bold', fontSize:'2rem', fontFamily:'Lexend' }}>Junior Web Developer</CardSubtitle>
+          </div>
+          </div>
         </Card>
-      </Container> */}
+      </Container>
 
       <Container className="current-projects">
         <Card>
