@@ -84,6 +84,7 @@ body {
 }
 .button-style {
   padding: 20px;
+  margin-left: 10px;
   background-color: rgb(171, 218, 246, 0.5);
   border-radius: 20px;
 }
@@ -158,11 +159,32 @@ button:hover {
   margin-top: 5px;
 }
 .my-background {
-  background-color: #007bff;
+  background-color: #ffc107;
   color: #ffffff;
   padding: 20px;
 }
 /* #enroll-pg{} */
 .container {
   margin-top: 20px;
+}
+
+/* Organize below*/
+
+.top-projects {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 2px;
+  background-color: rgb(120, 118, 118, 0.4);
+  font-family:'Bangers', cursive;
+}
+
+.top-projects:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.resume-container {
+  margin: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
 }

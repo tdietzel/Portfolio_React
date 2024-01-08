@@ -36,11 +36,11 @@ function App() {
       <Col md={6}>
       <ButtonGroup style={{marginLeft: '440px'}} className="button-group">
         <div className="button-style">
-            <Button variant="outline-light">Projects</Button>{' '}
+            <Button variant="outline-light">All Projects</Button>{' '}
             <Button variant="outline-light">Interests</Button>{' '}
             <Button variant="outline-light">Resume</Button>{' '}
         </div>
-        <Card style={{marginLeft: '100px'}}>
+        <Card style={{marginLeft: '80px'}}>
           <Card.Img src={linkedin} alt="LinkedIn" style={{marginRight: '10px'}} className="social-media"/>
           <Card.Img src={gitHub} alt="GitHub" style={{marginRight: '10px', borderColor: 'white'}} className="social-media"/>
           <Card.Img src={discord} alt="Discord" style={{marginRight: '10px'}} className="social-media"/>
@@ -48,6 +48,31 @@ function App() {
         </Card>
       </ButtonGroup>
       </Col>
+
+      <Container style={{border:'2px solid darkGrey', marginRight:'60px', marginLeft:'60px'}}>
+        <Card className='top-projects'>
+          <CardText>Resort Website</CardText>
+        </Card>
+        <Card className='top-projects'>
+          <CardText>Wikipedia Rebuild</CardText>
+        </Card>
+        <Card className='top-projects'>
+          <CardText>Pizza Parlor</CardText>
+        </Card>
+        <Card className='top-projects'>
+          <CardText>Cupcake Shop</CardText>
+        </Card>
+        <Card className='top-projects'>
+          <CardText>Cold Play Website</CardText>
+        </Card>
+      </Container>
+      
+      {/* <Container style={{border:'5px solid black', height:'1000px', width:'auto'}} className="resume-container">
+        <Card>
+          <CardTitle>Resume</CardTitle>
+        </Card>
+      </Container> */}
+
       <Container className="current-projects">
         <Card>
           <Card.Title className="white"><em>Current Projects!</em></Card.Title>
