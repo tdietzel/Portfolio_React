@@ -1,85 +1,14 @@
-import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle, Button, ButtonGroup, Col, CardImg, CardSubtitle } from 'react-bootstrap'
-import image from "../assets/myPicture.png"
-import discord from "../assets/discord.png"
-import linkedin from "../assets/linkedin.png"
-import twitter from "../assets/twitter.png"
-import gitHub from "../assets/github.png"
-import resumeBKG from '../assets/resume.png'
+import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle} from 'react-bootstrap'
+import CursorFollower from './CursorFollower'
 
-function App() {
+function App() { 
   return (
     <>
-      <Container className="body">
-        <Card className="profile-pic-container">
-          <div className="profile-pic">
-            <Card.Img src={image} alt="A picture of me fishing." className="profile-picture"/>
-          </div>
-          <h1 className='title-font'>Hey, I'm Trent
-          <br />
-          <span id="title">
-            <span style={{ "--index": 1, paddingLeft: "62px" }}>W</span>
-            <span style={{ "--index": 2 }}>e</span>
-            <span style={{ "--index": 3 }}>b</span>
-            <span style={{ "--index": 4, paddingRight: '30px' }}></span>
-            <span style={{ "--index": 5 }}>D</span>
-            <span style={{ "--index": 6 }}>e</span>
-            <span style={{ "--index": 7 }}>v</span>
-            <span style={{ "--index": 8 }}>e</span>
-            <span style={{ "--index": 9 }}>l</span>
-            <span style={{ "--index": 10 }}>o</span>
-            <span style={{ "--index": 11 }}>p</span>
-            <span style={{ "--index": 12 }}>e</span>
-            <span style={{ "--index": 12 }}>r</span>
-          </span>
-        </h1>
-        </Card>
-      </Container>
-      <Col md={6}>
-      <ButtonGroup style={{marginLeft: '440px'}} className="button-group">
-        <div className="button-style">
-            <Button variant="outline-light">All Projects</Button>{' '}
-            <Button variant="outline-light">Interests</Button>{' '}
-            <Button variant="outline-light">Resume</Button>{' '}
-        </div>
-        <Card style={{marginLeft: '80px'}}>
-          <Card.Img src={linkedin} alt="LinkedIn" style={{marginRight: '10px'}} className="social-media"/>
-          <Card.Img src={gitHub} alt="GitHub" style={{marginRight: '10px', borderColor: 'white'}} className="social-media"/>
-          <Card.Img src={discord} alt="Discord" style={{marginRight: '10px'}} className="social-media"/>
-          <Card.Img src={twitter} alt="Twitter" style={{borderColor: 'white'}} className="social-media"/>
-        </Card>
-      </ButtonGroup>
-      </Col>
-
-      <Container style={{border:'2px solid darkGrey', marginRight:'60px', marginLeft:'60px'}}>
-        <Card className='top-projects'>
-          <CardText>Resort Website</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Wikipedia Rebuild</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Pizza Parlor</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Cupcake Shop</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Cold Play Website</CardText>
-        </Card>
-      </Container>
-      
-      <Container >
-        <Card>
-          <div style={{ position: 'relative' }}>
-          <CardImg src={resumeBKG}/>
-          <div style={{ position: 'absolute', top: '15%', left: '42%', color: 'black', textAlign: 'center' }}>
-            <CardTitle style={{ fontWeight:'bold', fontSize:'4rem', fontFamily:'Courier New' }}>Trent Dietzel</CardTitle>
-            <CardSubtitle style={{ fontWeight:'bold', fontSize:'2rem', fontFamily:'Lexend' }}>Junior Web Developer</CardSubtitle>
-          </div>
-          </div>
-        </Card>
-      </Container>
-
+      { /* Moving Fish Cursor */ }
+      <div className="App">
+        <CursorFollower />
+      </div>
+      { /* Old Project */ }
       <Container className="current-projects">
         <Card>
           <Card.Title className="white"><em>Current Projects!</em></Card.Title>
