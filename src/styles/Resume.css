@@ -15,6 +15,9 @@
   height: 3rem;
   width: 3rem;
 }
+.pdf-img:hover {
+  cursor: pointer;
+}
 .resume-header-title {
   font-weight: bold;
   font-size: 3rem;

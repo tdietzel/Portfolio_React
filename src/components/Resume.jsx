@@ -15,13 +15,15 @@ export default function Resume() {
 
             {/* Resume Header */}
             <div className='resume-header'>
-              <CardImg src={pdf} className='pdf-img'/>
+              <CardImg src={pdf} className='pdf-img'
+                onClick={() => window.open('https://www.dropbox.com/scl/fi/pfk47wfwir3v9dbjvb2to/Resume-1.pdf?rlkey=iovgl9486qn384n4wdyxxoeel&dl=0', '_blank')}
+              />
               <CardTitle className='resume-header-title'>Trent Dietzel</CardTitle>
               <CardSubtitle className='resume-header-subtitle'>Junior Web Developer</CardSubtitle>
               <Card.Text className='resume-header-text'>
-                <span style={{fontStyle:'italic'}}>dietzelbiz@outlook.com</span> 
-                • <a href='https://www.linkedin.com/in/trentdietzel/'>linkedin.com/in/trentdietzel</a> 
-                • <a href='https://github.com/tdietzel'>github.com/tdietzel</a> • Oregon
+                <span style={{fontStyle:'italic'}}>dietzelbiz@outlook.com </span> 
+                • <a href='https://www.linkedin.com/in/trentdietzel/'>linkedin.com/in/trentdietzel </a> 
+                • <a href='https://github.com/tdietzel'>github.com/tdietzel </a>• Oregon
               </Card.Text>
               <hr />
             </div>

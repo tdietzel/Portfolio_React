@@ -28,13 +28,17 @@ export default function NavBar() {
           {/* Social Media */}
           <Card className='social-media-card'>
             <Card.Img src={linkedin} alt="LinkedIn" className="social-media"
-            onClick={() => window.open('https://linkedin.com/in/trentdietzel', '_blank')} />
+              onClick={() => window.open('https://linkedin.com/in/trentdietzel', '_blank')}
+            />
             <Card.Img src={gitHub} alt="GitHub" className="social-media border-white"
-            onClick={() => window.open('https://github.com/tdietzel', '_blank')} />
+              onClick={() => window.open('https://github.com/tdietzel', '_blank')}
+            />
             <Card.Img src={discord} alt="Discord" className="social-media"
-            onClick={() => window.open('https://discordapp.com/users/trent.dev', '_blank')} />
+              onClick={() => window.open('https://discordapp.com/users/trent.dev', '_blank')}
+            />
             <Card.Img src={twitter} alt="Twitter" className="social-media border-white"
-            onClick={() => window.open('https://twitter.com/trentdietzel', '_blank')} />
+              onClick={() => window.open('https://twitter.com/trentdietzel', '_blank')}
+            />
           </Card>
         </ButtonGroup>
       </Col>
