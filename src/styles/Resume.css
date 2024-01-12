@@ -1,0 +1,168 @@
+/* Header */
+.resume-header {
+  position: absolute;
+  top: 13%;
+  left: 39%;
+  color: black;
+  text-align: center;
+}
+.pdf-img {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  float: right;
+  height: 3rem;
+  width: 3rem;
+}
+.resume-header-title {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Courier New';
+  margin-left: 35px;
+}
+.resume-header-subtitle {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Lexend';
+}
+.resume-header-text {
+  margin: 0px;
+  font-family: 'Arial';
+}
+/* About Me */
+.resume-about-me {
+  position: absolute;
+  top: 23%;
+  left: 39%;
+  color: black;
+  text-align: left;
+}
+.resume-about-me-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Courier New';
+  margin-bottom: 0rem;
+}
+.resume-about-me-text {
+  width: 600px;
+  margin-bottom: 0rem;
+  font-family: 'Calibri';
+  margin-top: 0rem;
+}
+/* Projects */
+.projects-education-header {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 3rem;
+}
+.projects-title {
+  text-align: left;
+  width: 200px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family:'Courier New';
+}
+.education-title {
+  text-align: left;
+  width: 200px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family:'Courier New';
+  margin-bottom: 0rem;
+}
+.resume-projects-div {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.resume-project {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 2px;
+  background-color: rgb(120, 118, 118, 0.1);
+  font-family:'Bangers', cursive;
+}
+.resume-project:hover {
+  background-color: rgba(3, 91, 255, 0.5);
+  color:white;
+  text-decoration: underline;
+  cursor:pointer;
+  font-weight: bold;
+}
+.resume-project-link {
+  margin: 0rem;
+  color: blue;
+}
+.resume-project-tech {
+  margin-top: 10.3px;
+  margin-bottom: 0rem;
+  margin-right: 25px;
+  font-size: 9px;
+  height: 1rem;
+}
+/* School */
+.resume-school-card {
+  margin-right: 0rem;
+  margin-top: 0rem;
+  width: 300px;
+  font-family: 'Helvetica Neue';
+}
+/* Experience */
+.resume-experience-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0rem;
+  font-family: 'Courier New';
+}
+.resume-experience-years {
+  font-family: "Comic Sans MS";
+  font-size: 15px;
+}
+.resume-experience-job {
+  font-family: 'Garamond';
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.resume-experience-position {
+  font-family: 'Comic Sans MS';
+  font-size: 15px;
+  font-style: italic;
+  margin-left: 30px;
+}
+.resume-experience-job-card {
+  width: 600px;
+  margin-top: 3px;
+  margin-left: 60px;
+  font-family: 'Roboto';
+}
+#resume-bold{
+  font-weight: bold;
+}
+/* Skills */
+.resume-skills-div {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Arial';
+}
+.resume-skills-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0rem;
+  font-family: 'Courier New';
+}
+.resume-skills-section {
+  margin-top: 20px;
+}
+#margin-zero {
+  margin: 0rem;
+}

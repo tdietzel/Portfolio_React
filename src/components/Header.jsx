@@ -1,11 +1,20 @@
+// Located in main.jsx
+// NavBar.jsx is in Return
 import { Container, Card } from 'react-bootstrap'
 
+import CursorFollower from './CursorFollower'
 import NavBar from './NavBar'
 import image from "../assets/myPicture.png"
+import '../styles/Header.css'
 
 function Header() {
   return (
     <>
+      { /* Moving Fish Cursor */ }
+      <div className="App">
+        <CursorFollower />
+      </div>
+
       <Container className="main-header">
         {/* Profile Picture */}
         <Card className="profile-pic-container">

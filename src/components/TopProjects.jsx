@@ -1,9 +1,12 @@
+// Located in main.jsx
 import { Container, Card, CardText } from 'react-bootstrap'
+
+import '../styles/TopProjects.css'
 
 export default function TopProjects() {
   return (
     <>
-      <Container style={{border:'2px solid darkGrey', marginRight:'60px', marginLeft:'60px'}}>
+      <Container className='top-projects-container'>
         <Card className='top-projects'>
           <CardText>Resort Website</CardText>
         </Card>

@@ -1,7 +1,9 @@
+// Located in main.jsx
 import { Container, Card, CardText, CardImg, CardTitle, CardSubtitle } from 'react-bootstrap'
 
 import resumeBKG from '../assets/resume.png'
 import pdf from '../assets/pdf.png'
+import '../styles/Resume.css'
 
 export default function Resume() {
   return (
@@ -10,53 +12,57 @@ export default function Resume() {
         <Card>
           <div style={{ position: 'relative' }}>
             <CardImg src={resumeBKG}/>
-            <div style={{ position: 'absolute', top: '13%', left: '39%', color: 'black', textAlign: 'center' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0px', marginBottom: '0px', float:'right' }}>
-                <CardImg src={pdf} height='50px' width='50px'/>
-              </div>
-              {/* Header on Resume */}
-              <CardTitle style={{ fontWeight:'bold', fontSize:'4rem', fontFamily:'Courier New', marginLeft:'35px' }}>Trent Dietzel</CardTitle>
-              <CardSubtitle style={{ fontWeight:'bold', fontSize:'2rem', fontFamily:'Lexend' }}>Junior Web Developer</CardSubtitle>
-              <Card.Text style={{margin:'0px', fontFamily:'Arial'}}><span style={{fontStyle:'italic'}}>dietzelbiz@outlook.com</span> • <a href='https://www.linkedin.com/in/trentdietzel/'>linkedin.com/in/trentdietzel</a> • <a href='https://github.com/tdietzel'>github.com/tdietzel</a> • Oregon</Card.Text>
+
+            {/* Resume Header */}
+            <div className='resume-header'>
+              <CardImg src={pdf} className='pdf-img'/>
+              <CardTitle className='resume-header-title'>Trent Dietzel</CardTitle>
+              <CardSubtitle className='resume-header-subtitle'>Junior Web Developer</CardSubtitle>
+              <Card.Text className='resume-header-text'>
+                <span style={{fontStyle:'italic'}}>dietzelbiz@outlook.com</span> 
+                • <a href='https://www.linkedin.com/in/trentdietzel/'>linkedin.com/in/trentdietzel</a> 
+                • <a href='https://github.com/tdietzel'>github.com/tdietzel</a> • Oregon
+              </Card.Text>
               <hr />
             </div>
-            {/* About me on Resume */}
-            <div style={{ position: 'absolute', top: '23%', left: '39%', color: 'black', textAlign: 'left' }}>
-              <Card.Text style={{ fontSize: '1.3rem', fontWeight:'bold', fontFamily:'Courier New', marginBottom:'0px' }}>About Me</Card.Text>
-              <Card.Text style={{ width:'600px', marginBottom:'0px', fontFamily:'Calibri', marginTop:'0px' }}>With a lifelong passion for gaming and web development, I pursued a non-traditional path, acquiring valuable teamwork and problem-solving skills operating farm equipment. Eager to leverage these skills in a career transition to my early passion for technology.</Card.Text>
 
-              {/* Projects on Resume */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', width: '500px', marginTop: '0px', marginBottom: '0px', height:'3rem' }}>
-                <Card.Text style={{ textAlign: 'left', width: '200px', fontSize: '1.3rem', fontWeight:'bold', fontFamily:'Courier New' }}>Projects</Card.Text>
-                <Card.Text style={{ textAlign: 'left', width: '200px', fontSize: '1.3rem', fontWeight:'bold', fontFamily:'Courier New', marginBottom:'0px' }}>Education</Card.Text>
+            {/* About me on Resume */}
+            <div className='resume-about-me'>
+              <Card.Text className='resume-about-me-title'>About Me</Card.Text>
+              <Card.Text className='resume-about-me-text'>With a lifelong passion for gaming and web development, I pursued a non-traditional path, acquiring valuable teamwork and problem-solving skills operating farm equipment. Eager to leverage these skills in a career transition to my early passion for technology.</Card.Text>
+
+              {/* Projects on Resume*/}
+              <div className='projects-education-header'>
+                <Card.Text className='projects-title'>Projects</Card.Text>
+                <Card.Text className='education-title'>Education</Card.Text>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', width: '600px', marginTop: '0px', marginBottom: '0px' }}>
+              <div className='resume-projects-div'>
                 <Container style={{ marginTop:'0px'}}>
-                  <Card className='resume-projects'>
-                    <CardText style={{ margin:'0px', color:'blue' }}>Coffee Inventory</CardText>
+                  <Card className='resume-project'>
+                    <CardText className='resume-project-link'>Coffee Inventory</CardText>
                   </Card>
-                  <Card className='resume-projects'>
-                    <CardText style={{ margin:'0px', color:'blue' }}>Pizza Parlor</CardText>
+                  <Card className='resume-project'>
+                    <CardText className='resume-project-link'>Pizza Parlor</CardText>
                   </Card>
-                  <Card className='resume-projects'>
-                    <CardText style={{ margin:'0px', color:'blue' }}>Account Login</CardText>
+                  <Card className='resume-project'>
+                    <CardText className='resume-project-link'>Account Login</CardText>
                   </Card>
-                  <Card className='resume-projects'>
-                    <CardText style={{ margin:'0px', color:'blue' }}>Currency_Exchange</CardText>
+                  <Card className='resume-project'>
+                    <CardText className='resume-project-link'>Currency_Exchange</CardText>
                   </Card>
                 </Container>
                 <div>
-                  <CardText style={{marginTop:'10px', marginBottom:'0px', marginRight:'25px', fontSize:'9px', height: '1rem'}}>JavaScript, React/Redux, TDD</CardText>
-                  <CardText style={{marginTop:'11px', marginBottom:'0px', marginRight:'25px', fontSize:'9px', height: '1rem'}}>JavaScript, React/Redux, TDD</CardText>
-                  <CardText style={{marginTop:'11px', marginBottom:'0px', marginRight:'25px', fontSize:'9px', height: '1rem'}}>JavaScript, React/Redux, TDD</CardText>
-                  <CardText style={{marginTop:'11px', marginBottom:'0px', marginRight:'25px', fontSize:'9px', height: '1rem'}}>JavaScript, React/Redux, TDD</CardText>
+                  <CardText className='resume-project-tech'>JavaScript, React/Redux, TDD</CardText>
+                  <CardText className='resume-project-tech'>JavaScript, React/Redux, TDD</CardText>
+                  <CardText className='resume-project-tech'>JavaScript, React/Redux, TDD</CardText>
+                  <CardText className='resume-project-tech'>JavaScript, React/Redux, TDD</CardText>
                 </div>
 
                 {/* School on Resume */}
-                <Card.Text style={{ marginRight:'0px', marginTop:'0px', width:'300px', fontFamily:'Helvetica Neue'}}>
+                <Card.Text className='resume-school-card'>
                   <span style={{ marginLeft:'90px', fontWeight:'bold' }}>Epicodus • 2023</span>
                   <br />
-                  <span style={{ fontFamily:'Garamond', fontSize:'17px' }}>Certificate in Web & Mobile Development</span>
+                  <span style={{ fontSize:'17px', fontStyle: 'italic' }}>Certificate in Web & Mobile Development</span>
                   <br />
                   • Completed 27 week full time program
                   <br />
@@ -68,13 +74,13 @@ export default function Resume() {
 
               {/* Experience on Resume */}
               <div>
-                <Card.Text style={{fontSize: '1.3rem', fontWeight:'bold', marginTop:'0px', fontFamily:'Courier New'}}>Experience</Card.Text>
+                <Card.Text className='resume-experience-title'>Experience</Card.Text>
                 <Card.Text style={{margin:'0px'}}>
-                  <span style={{fontFamily:'Comic Sans MS', fontSize:'15px'}}>2023</span>
-                  <span style={{fontFamily:'Garamond', fontSize:'19px', fontWeight:'bold', marginLeft:'30px'}}>Creekside Valley Farms</span>
-                  <span style={{fontFamily:'Comic Sans MS', fontSize:'15px', fontStyle:'italic', marginLeft:'30px'}}>Equipment Operator</span>
+                  <span className='resume-experience-years'>2023</span>
+                  <span className='resume-experience-job'>Creekside Valley Farms</span>
+                  <span className='resume-experience-position'>Equipment Operator</span>
                 </Card.Text>
-                <Card.Text style={{width:'600px', marginTop:'3px', marginLeft:'60px', fontFamily:'Roboto'}}>
+                <Card.Text className='resume-experience-job-card'>
                   • <span id="resume-bold">Led the group</span> as the first combine in the convoy during the grain harvest, demonstrating
                   <span id="resume-bold"> leadership</span> and <span id="resume-bold">effective coordination</span>.
                   <br />
@@ -87,12 +93,12 @@ export default function Resume() {
                   • <span id="resume-bold">Communicated daily</span> progress, showcasing a commitment to <span id="resume-bold">documentation</span> and <span id="resume-bold">reporting,</span> a
                   skill transferable to code and process documentation.
                 </Card.Text>
-                <Card.Text style={{margin:'0px'}}>
-                  <span style={{fontFamily:'Comic Sans MS', fontSize:'15px'}}>2022</span>
-                  <span style={{fontFamily:'Garamond', fontSize:'19px', fontWeight:'bold', marginLeft:'30px'}}>Creekside Valley Farms</span>
-                  <span style={{fontFamily:'Comic Sans MS', fontSize:'15px', fontStyle:'italic', marginLeft:'30px'}}>Shop Helper to Equipment Operator</span>
+                <Card.Text id='margin-zero'>
+                  <span className='resume-experience-years'>2022</span>
+                  <span className='resume-experience-job'>Creekside Valley Farms</span>
+                  <span className='resume-experience-position'>Shop Helper to Equipment Operator</span>
                 </Card.Text>
-                <Card.Text style={{width:'600px', marginTop:'3px', marginLeft:'60px', fontFamily:'Roboto'}}>
+                <Card.Text className='resume-experience-job-card'>
                   • <span id="resume-bold">Determined optimal tools</span> and equipment requirements on the farm, showcasing
                     expertise in <span id="resume-bold">selecting the right resources</span> to enhance operational <span id="resume-bold">efficiency</span>
                   <br />
@@ -101,31 +107,31 @@ export default function Resume() {
                 </Card.Text>
               </div>
               {/* Skills on Resume */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', width: '650px', marginTop: '0px', marginBottom: '0px', fontFamily:'Arial' }}>
+              <div className='resume-skills-div'>
                 <div>
-                  <Card.Text style={{fontSize: '1.3rem', fontWeight:'bold', margin:'0px', fontFamily:'Courier New'}}>Skills</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>HTML / CSS</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>Git Version Control</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>API Calls</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>Pair Programming</Card.Text>
+                  <Card.Text className='resume-skills-title'>Skills</Card.Text>
+                  <Card.Text id='margin-zero'>HTML / CSS</Card.Text>
+                  <Card.Text id='margin-zero'>Git Version Control</Card.Text>
+                  <Card.Text id='margin-zero'>API Calls</Card.Text>
+                  <Card.Text id='margin-zero'>Pair Programming</Card.Text>
                 </div>
-                <div style={{marginTop:'20px'}}>
-                  <Card.Text style={{margin:'0px'}}>Javascript</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>Webpack</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>mySQL/SQLite</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>BDD / TDD</Card.Text>
+                <div className='resume-skills-section'>
+                  <Card.Text id='margin-zero'>Javascript</Card.Text>
+                  <Card.Text id='margin-zero'>Webpack</Card.Text>
+                  <Card.Text id='margin-zero'>mySQL/SQLite</Card.Text>
+                  <Card.Text id='margin-zero'>BDD / TDD</Card.Text>
                 </div>
-                <div style={{marginTop:'20px'}}>
-                  <Card.Text style={{margin:'0px'}}>TypeScript</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>Node.js</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>jQuery</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>DRY Code</Card.Text>
+                <div className='resume-skills-section'>
+                  <Card.Text id='margin-zero'>TypeScript</Card.Text>
+                  <Card.Text id='margin-zero'>Node.js</Card.Text>
+                  <Card.Text id='margin-zero'>jQuery</Card.Text>
+                  <Card.Text id='margin-zero'>DRY Code</Card.Text>
                 </div>
-                <div style={{marginTop:'20px'}}>
-                  <Card.Text style={{margin:'0px'}}>React.js / Redux</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>Firebase</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>C#/.NET</Card.Text>
-                  <Card.Text style={{margin:'0px'}}>QA & Testing</Card.Text>
+                <div className='resume-skills-section'>
+                  <Card.Text id='margin-zero'>React.js / Redux</Card.Text>
+                  <Card.Text id='margin-zero'>Firebase</Card.Text>
+                  <Card.Text id='margin-zero'>C#/.NET</Card.Text>
+                  <Card.Text id='margin-zero'>QA & Testing</Card.Text>
                 </div>
               </div>
             </div>

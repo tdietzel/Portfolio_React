@@ -1,5 +1,7 @@
+// Located in Header.jsx return
 import { Col, ButtonGroup, Card, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import '../styles/NavBar.css'
 
 import discord from "../assets/discord.png"
 import linkedin from "../assets/linkedin.png"
@@ -11,7 +13,7 @@ export default function NavBar() {
     <>
       <Col md={6}>
         {/* Button Sections */}
-        <ButtonGroup style={{marginLeft: '440px'}} className="button-group">
+        <ButtonGroup className="button-group">
           <div className="button-style">
             <Link to='/'>
               <Button variant="outline-light">All Projects</Button>{' '}
@@ -24,11 +26,11 @@ export default function NavBar() {
             </Link>
           </div>
           {/* Social Media */}
-          <Card style={{marginLeft: '80px'}}>
-            <Card.Img src={linkedin} alt="LinkedIn" style={{marginRight: '10px'}} className="social-media"/>
-            <Card.Img src={gitHub} alt="GitHub" style={{marginRight: '10px', borderColor: 'white'}} className="social-media"/>
-            <Card.Img src={discord} alt="Discord" style={{marginRight: '10px'}} className="social-media"/>
-            <Card.Img src={twitter} alt="Twitter" style={{borderColor: 'white'}} className="social-media"/>
+          <Card className='social-media-card'>
+            <Card.Img src={linkedin} alt="LinkedIn" className="social-media"/>
+            <Card.Img src={gitHub} alt="GitHub" className="social-media border-white"/>
+            <Card.Img src={discord} alt="Discord" className="social-media"/>
+            <Card.Img src={twitter} alt="Twitter" className="social-media border-white"/>
           </Card>
         </ButtonGroup>
       </Col>

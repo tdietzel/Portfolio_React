@@ -1,0 +1,16 @@
+.top-projects-container {
+  border: 2px solid darkgrey;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+.top-projects {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin: 2px;
+  background-color: rgb(120, 118, 118, 0.4);
+  font-family:'Bangers', cursive;
+}
+.top-projects:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}

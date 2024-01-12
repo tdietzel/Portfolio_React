@@ -1,13 +1,10 @@
+// Located in main.jsx
 import { Card, ListGroup, Container, ListGroupItem, CardText, CardTitle} from 'react-bootstrap'
-import CursorFollower from './CursorFollower'
+import '../styles/App.css'
 
 function App() { 
   return (
     <>
-      { /* Moving Fish Cursor */ }
-      <div className="App">
-        <CursorFollower />
-      </div>
       { /* Old Project */ }
       <Container className="current-projects">
         <Card>
