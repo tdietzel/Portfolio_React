@@ -1,4 +1,5 @@
 import { Container, Card } from 'react-bootstrap'
+
 import NavBar from './NavBar'
 import image from "../assets/myPicture.png"
 

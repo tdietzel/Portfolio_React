@@ -1,4 +1,5 @@
 import { Container, Card, CardText, CardImg, CardTitle, CardSubtitle } from 'react-bootstrap'
+
 import resumeBKG from '../assets/resume.png'
 import pdf from '../assets/pdf.png'
 
@@ -19,7 +20,7 @@ export default function Resume() {
               <Card.Text style={{margin:'0px', fontFamily:'Arial'}}><span style={{fontStyle:'italic'}}>dietzelbiz@outlook.com</span> • <a href='https://www.linkedin.com/in/trentdietzel/'>linkedin.com/in/trentdietzel</a> • <a href='https://github.com/tdietzel'>github.com/tdietzel</a> • Oregon</Card.Text>
               <hr />
             </div>
-          {/* About me on Resume */}
+            {/* About me on Resume */}
             <div style={{ position: 'absolute', top: '23%', left: '39%', color: 'black', textAlign: 'left' }}>
               <Card.Text style={{ fontSize: '1.3rem', fontWeight:'bold', fontFamily:'Courier New', marginBottom:'0px' }}>About Me</Card.Text>
               <Card.Text style={{ width:'600px', marginBottom:'0px', fontFamily:'Calibri', marginTop:'0px' }}>With a lifelong passion for gaming and web development, I pursued a non-traditional path, acquiring valuable teamwork and problem-solving skills operating farm equipment. Eager to leverage these skills in a career transition to my early passion for technology.</Card.Text>

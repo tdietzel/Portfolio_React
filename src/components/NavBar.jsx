@@ -1,8 +1,10 @@
+import { Col, ButtonGroup, Card, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
 import discord from "../assets/discord.png"
 import linkedin from "../assets/linkedin.png"
 import twitter from "../assets/twitter.png"
 import gitHub from "../assets/github.png"
-import { Col, ButtonGroup, Card, Button } from 'react-bootstrap'
 
 export default function NavBar() {
   return (
@@ -11,9 +13,15 @@ export default function NavBar() {
         {/* Button Sections */}
         <ButtonGroup style={{marginLeft: '440px'}} className="button-group">
           <div className="button-style">
+            <Link to='/'>
               <Button variant="outline-light">All Projects</Button>{' '}
+            </Link>
+            <Link to='/App'>
               <Button variant="outline-light">Interests</Button>{' '}
-              <Button variant="outline-light">Resume</Button>{' '}
+            </Link>
+            <Link to='/Resume'>
+              <Button variant="outline-light">Resume</Button>{' '} 
+            </Link>
           </div>
           {/* Social Media */}
           <Card style={{marginLeft: '80px'}}>
