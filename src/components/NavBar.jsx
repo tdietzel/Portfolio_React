@@ -16,10 +16,10 @@ export default function NavBar() {
         <ButtonGroup className="button-group">
           <div className="button-style">
             <Link to='/'>
-              <Button variant="outline-light">All Projects</Button>{' '}
+              <Button variant="outline-light">Home</Button>{' '}
             </Link>
-            <Link to='/App'>
-              <Button variant="outline-light">Interests</Button>{' '}
+            <Link to='/TopProjects'>
+              <Button variant="outline-light">All Projects</Button>{' '}
             </Link>
             <Link to='/Resume'>
               <Button variant="outline-light">Resume</Button>{' '} 
