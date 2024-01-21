@@ -37,7 +37,7 @@ function Header() {
               <span style={{ "--index": 10 }}>o</span>
               <span style={{ "--index": 11 }}>p</span>
               <span style={{ "--index": 12 }}>e</span>
-              <span style={{ "--index": 12 }}>r</span>
+              <span style={{ "--index": 13 }}>r</span>
             </span>
           </h1>
         </Card>
