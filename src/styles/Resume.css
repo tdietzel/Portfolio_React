@@ -113,6 +113,7 @@
 .resume-school-card {
   margin-right: 0rem;
   margin-top: 0rem;
+  margin-bottom: 0rem;
   width: 300px;
   font-family: 'Helvetica Neue';
 }
@@ -120,7 +121,7 @@
 .resume-experience-title {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 0rem;
+  margin: 0rem;
   font-family: 'Courier New';
 }
 .resume-experience-years {
@@ -143,7 +144,9 @@
   width: 600px;
   margin-top: 3px;
   margin-left: 60px;
+  margin-bottom: 0rem;
   font-family: 'Roboto';
+  font-size: .8rem;
 }
 #resume-bold{
   font-weight: bold;
@@ -164,7 +167,8 @@
   font-family: 'Courier New';
 }
 .resume-skills-section {
-  margin-top: 20px;
+  margin-top: 2rem;
+  font-size: .8rem;
 }
 #margin-zero {
   margin: 0rem;

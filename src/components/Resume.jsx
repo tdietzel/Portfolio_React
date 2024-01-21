@@ -112,10 +112,12 @@ export default function Resume() {
               <div className='resume-skills-div'>
                 <div>
                   <Card.Text className='resume-skills-title'>Skills</Card.Text>
-                  <Card.Text id='margin-zero'>HTML / CSS</Card.Text>
-                  <Card.Text id='margin-zero'>Git Version Control</Card.Text>
-                  <Card.Text id='margin-zero'>API Calls</Card.Text>
-                  <Card.Text id='margin-zero'>Pair Programming</Card.Text>
+                  <div style={{fontSize: '.8rem'}}>
+                    <Card.Text id='margin-zero'>HTML / CSS</Card.Text>
+                    <Card.Text id='margin-zero'>Git Version Control</Card.Text>
+                    <Card.Text id='margin-zero'>API Calls</Card.Text>
+                    <Card.Text id='margin-zero'>Pair Programming</Card.Text>
+                  </div>
                 </div>
                 <div className='resume-skills-section'>
                   <Card.Text id='margin-zero'>Javascript</Card.Text>
