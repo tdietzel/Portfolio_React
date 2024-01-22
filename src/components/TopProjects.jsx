@@ -1,28 +1,26 @@
 // Located in main.jsx
-import { Container, Card, CardText } from 'react-bootstrap'
-
-import '../styles/TopProjects.css'
+import '../styles/TopProjects.css';
 
 export default function TopProjects() {
   return (
-    <>
-      <Container className='top-projects-container'>
-        <Card className='top-projects'>
-          <CardText>Resort Website</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Wikipedia Rebuild</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Pizza Parlor</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Cupcake Shop</CardText>
-        </Card>
-        <Card className='top-projects'>
-          <CardText>Cold Play Website</CardText>
-        </Card>
-      </Container>
-    </>
-  )
+    <div style={{paddingTop:'10rem', paddingBottom:'10rem'}}>
+      <div className='top-projects-container'>
+        <div className='top-projects'>
+          <p>Resort Website (Link not working yet)</p>
+        </div>
+        <div className='top-projects'>
+          <p>Wikipedia Rebuild (Link not working yet)</p>
+        </div>
+        <div className='top-projects'>
+          <p>Pizza Parlor (Link not working yet)</p>
+        </div>
+        <div className='top-projects'>
+          <p>Cupcake Shop (Link not working yet)</p>
+        </div>
+        <div className='top-projects'>
+          <p>Cold Play Website (Link not working yet)</p>
+        </div>
+      </div> 
+    </div>
+  );
 }

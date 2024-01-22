@@ -1,25 +1,23 @@
 // Located in main.jsx
 // NavBar.jsx is in Return
-import { Container, Card } from 'react-bootstrap'
-
-import CursorFollower from './CursorFollower'
-import NavBar from './NavBar'
-import image from "../assets/myPicture.png"
-import '../styles/Header.css'
+import CursorFollower from './CursorFollower';
+import NavBar from './NavBar';
+import image from "../assets/myPicture.png";
+import '../styles/Header.css';
 
 function Header() {
   return (
     <>
-      { /* Moving Fish Cursor */ }
+      {/* Moving Fish Cursor */}
       <div className="App">
         <CursorFollower />
       </div>
 
-      <Container className="main-header">
+      <div className="main-header">
         {/* Profile Picture */}
-        <Card className="profile-pic-container">
+        <div className="profile-pic-container">
           <div className="profile-pic">
-            <Card.Img src={image} alt="A picture of me fishing." className="profile-picture"/>
+            <img src={image} alt="A picture of me fishing." className="profile-picture" />
           </div>
           <h1 className='title-font'>Hey, I'm Trent
             <br />
@@ -40,11 +38,11 @@ function Header() {
               <span style={{ "--index": 13 }}>r</span>
             </span>
           </h1>
-        </Card>
-      </Container>
+        </div>
+      </div>
       <NavBar />
     </>
-  )
+  );
 }
 
 export default Header;

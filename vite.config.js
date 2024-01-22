@@ -6,6 +6,6 @@ export default defineConfig({
   base: '/Portfolio_React/',
   plugins: [react()],
   css: {
-    extract: false,
+    extract: true,
   },
 });

@@ -36,7 +36,7 @@
 /* About Me */
 .resume-about-me {
   position: absolute;
-  top: 23%;
+  top: 25%;
   left: 39%;
   color: black;
   text-align: left;
@@ -79,15 +79,16 @@
 }
 .resume-projects-div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 600px;
+  width: 160px;
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
 .resume-project {
   padding-top: 1px;
   padding-bottom: 1px;
-  margin: 2px;
+  margin: 0px;
   background-color: rgb(120, 118, 118, 0.1);
   font-family:'Bangers', cursive;
 }
@@ -103,7 +104,7 @@
   color: blue;
 }
 .resume-project-tech {
-  margin-top: 10.3px;
+  /* margin-top: 10.3px; */
   margin-bottom: 0rem;
   margin-right: 25px;
   font-size: 9px;

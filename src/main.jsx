@@ -21,13 +21,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Router>
-      <Header />
-      <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/TopProjects' element={<TopProjects />} />
-        <Route path='/Resume' element={<Resume />} />
-      </Routes>
-    </Router>
+        <Header />
+        <Routes>
+          <Route path='/Portfolio_React/' element={<App />} />
+          <Route path='/TopProjects' element={<TopProjects />} />
+          <Route path='/Resume' element={<Resume />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   </React.StrictMode>,
 )
